@@ -1,6 +1,6 @@
 # Go-Ethereum (Geth) 核心功能与架构设计研究报告
 
-## 一、理论分析（40%）
+## 一、理论分析
 
 ### 1.1 Geth 在以太坊生态中的定位
 Geth（Go-Ethereum）是以太坊最主流的执行客户端（Execution Client）之一，负责：
@@ -36,7 +36,7 @@ Geth（Go-Ethereum）是以太坊最主流的执行客户端（Execution Client�
 
 ---
 
-## 二、架构设计（30%）
+## 二、架构设计
 
 ### 2.1 分层架构图
 
@@ -114,7 +114,7 @@ Geth（Go-Ethereum）是以太坊最主流的执行客户端（Execution Client�
 
 ---
 
-## 五、实践验证（30%）
+## 五、实践验证
 
 ### 5.1 编译与运行 Geth 节点
 ```bash
