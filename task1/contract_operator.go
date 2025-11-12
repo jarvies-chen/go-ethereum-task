@@ -6,7 +6,6 @@ import (
 	"fmt"
 	"log"
 	"math/big"
-	"strings"
 	"time"
 
 	"github.com/ethereum/go-ethereum/accounts/abi/bind"
@@ -16,8 +15,8 @@ import (
 
 func deployAndInteract() {
 	// 配置
-	infuraURL := "https://sepolia.infura.io/v3/YOUR_INFURA_PROJECT_ID"
-	privateKeyHex := "YOUR_PRIVATE_KEY_HERE" // 替换为您的私钥
+	infuraURL := "https://sepolia.infura.io/v3/a8bd9406b3ba410f8033de441bbb5420"
+	privateKeyHex := "a594910ec84a2ea0dc9117ae2f2f16281a7717893730b3b97e4dfc436ad3d058" // 替换为您的私钥
 
 	// 连接到 Sepolia
 	client, err := ethclient.Dial(infuraURL)
@@ -27,7 +26,7 @@ func deployAndInteract() {
 	defer client.Close()
 
 	// 创建交易授权
-	privateKey, err := crypto.HexToECDSA(strings.TrimPrefix(privateKeyHex, "0x"))
+	privateKey, err := crypto.HexToECDSA(privateKeyHex)
 	if err != nil {
 		log.Fatal("私钥格式错误:", err)
 	}
